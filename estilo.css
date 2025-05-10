@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cor-primaria:  rgb(115, 107, 65);
+    --cor-secundaria: rgb(238, 232, 220);
+    --cor-destaque: rgb(248, 229, 193);
+    --cor-destaque-2: rgb(244, 219, 173);
+    --cor-hover: rgb(179, 178, 173);
+    --cor-hover-2: rgb(220, 211, 157);
+    --cor-branco: #fff;
+
+}
+
+
+/*------Estilização da pagina de entrada (form_login)----*/
+#container_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+    
+}
+
+
+.login_box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background:  var(--cor-destaque);
+    border: 2px solid var(--cor-primaria);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo_h2{
+    font-size: 2em;
+    color: var(--cor-primaria);
+}
+
+.input_box{
+    position: relative;
+    width: 330px;
+    margin: 30px 0;
+    border-bottom: 2px solid var(--cor-branco);
+}
+
+#email{
+    margin-bottom: -20px;
+}
+#senha{
+    margin-bottom: -20px;
+}
+
+.input_box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color:  var(--cor-primaria);
+    pointer-events: none;
+    transition: -5s;
+    
+}
+
+.input_box input:focus~label,
+.input_box input:valid~label{
+    top: -5px;
+}
+
+.input_box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color:  var(--cor-primaria);
+    padding: 0 4px 0 5px;
+}
+
+.input_box .icon{
+    position: absolute;
+    right: 8px;
+    color:  var(--cor-primaria);
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.botao_login{
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor-branco);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--cor-primaria);
+    font-weight: 500;
+
+}
+
+.botao_login:hover{
+    background-color: var(--cor-hover-2);
+    border: 1px solid var(--cor-destaque-2);
+}
+
+
+
+
+/*------Estilização da pagina(form_cadastro)----*/
+#container_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+
+}
+
+#container_cadastro{
+  position: relative;
+  border: 2px solid var(--cor-primaria);
+  width: 1000px;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 15%;
+  border-radius: 20px;
+  background: var(--cor-destaque);
+  
+ 
+}
+#titulo_h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    color: var(--cor-primaria);
+    
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color:var(--cor-destaque-2);
+  
+  }
+
+
+
+#seccao_cadastro{
+   display: flex;
+   justify-content: center;
+   padding-left: 17px;
+}
+.esquerda{
+  padding-top: 35px;
+  color: var(--cor-primaria);
+}
+.esquerda input{
+    background: transparent;
+    outline: none;
+    font-size: 1em;
+    border: none;
+    color:  var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-branco);
+   
+   
+}
+.centro{
+    padding-top: 20px;
+    color: var(--cor-primaria);
+}
+.centro input{
+    background: transparent;
+    outline: none;
+    font-size: 1em;
+    border: none;
+    color:  var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-branco);
+    }
+
+.direita{
+    color: var(--cor-primaria);
+}
+
+.botao_cadastro{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+ }
+ .botao_estilo{
+    width: 200px;
+    height: 40px;
+    background-color: var(--cor-branco);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: var(--cor-primaria);
+    font-weight: 500;
+    margin-top: 50px;
+ }
+ .botao_estilo:hover{
+    background-color: var(--cor-hover-2);
+    border: 1px solid var(--cor-destaque-2);
+    
+ }
+  
+
+    
+
+
+/*--------Estilização Barra-link-topo ---*/
+
+.top_links{
+   border-top: 100%;
+   height: 80px;
+   background-color: var(--cor-secundaria);
+}
+header{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.top_links a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-size: 1.15em;
+    
+}
+.top_links a:hover{
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    margin-top: 20px;
+    text-decoration: underline;
+    
+}
+
+/*-------- Historico_Cadastro-------*/
+
+.titulo_h1{
+    font-size: 2em;
+    color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#tabela_cadastro{
+    background-color: var(--cor-destaque);
+    width: 100%;
+    margin: auto;
+}
+
+.info_titulos {
+    line-height: 40px  
+}
+.info_cliente td{
+   line-height: 40px;
+}
+ 
+.info_titulos{
+    font-size: 1.2em;
+    color: var(--cor-primaria);
+    font-weight: bold;
+    background-color: var(--cor-destaque-2);
+    
+
+}
+.info_cliente{
+    color: var(--cor-primaria);
+}
+
+
+.edita_excluir{
+    padding-left: 20px;
+   
+}
+.edita_excluir a{
+    padding-left: 5px;
+    color:  var(--cor-primaria);
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.edita_excluir a:hover{
+    text-decoration: underline;
+}
+
+/*Input Buscar cliente*/
+.topo_input_buscar{
+  display: flex;
+  justify-items: left;
+  font-size: 1.2em; 
+  color: var(--cor-primaria);
+  border: 5px; 
+  margin-bottom: 10px;
+}
+
+#topo_input_buscar{
+    margin-left: 130px;
+}
+.topo_input_buscar input{
+    font-size: 1em;
+    outline-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+    width: 220px;
+    border-color: var(--cor-primaria); 
+     
+}
+
+.topo_input_buscar input:hover{
+    color: var(--cor-primaria);
+    
+    
+}
+
+.menu_voltar img{
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+
+}
+.invisivel{
+    display: none;
+}
+
+.data_venda{
+   height: 30px;
+}
+
+.edita{
+    display: flex;
+    justify-content: center;
+}
+
+/*---Pagina Vendas---*/
+
+.nome{
+    display: flex;
+    padding-top: 40px;
+    margin-left: 140px;
+    font-size: 1.3em;
+    color: var(--cor-primaria);
+    width: 380px;
+   
+}
+
+/*----- Corpo da pagina Venda---*/
+
+.nome{
+    display: flex;
+    padding-top: 40px;
+    margin-left: 140px;
+    font-size: 1.3em;
+    color: var(--cor-primaria);
+    
+       
+}
+
+.nome input{
+    background: transparent;
+    width: 380px;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid var(--cor-primaria);
+    padding: 0 8px 0 5px;
+    color:  var(--cor-primaria);
+    font-size: .9em;
+  
+}
+
+.box_tabela{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.tabela_venda{
+    border: 1px solid var(--cor-primaria); text-align: left;
+    border-collapse: collapse;
+    background-color: var(--cor-destaque);
+    color:var(--cor-primaria);
+    
+}
+.tabela_venda  input{
+    width: 230px;
+    height: 30px;
+    font-size: 1.2em;
+    color: var(--cor-primaria);
+    border-collapse: collapse;
+    outline: none;
+    border: none;
+}
+
+.cabecalho th{
+    border: 1px solid var(--cor-primaria);
+    height: 30px;
+    font-size: 1.2em;
+}
+
+#tabela_corpo td{
+    border: 1px solid var(--cor-primaria);
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    padding-left: 72.3%;
+       
+}
+
+#add-linha-btn {
+    width: 120px;
+    height: 40px;
+    padding-top: px;
+    font-size: .9em;
+    color: var(--cor-primaria);
+    font-weight: bold;
+    border-color: var(--cor-primaria);
+    border: 0;
+    background-color: var(--cor-secundaria);
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+#add-linha-btn:hover{
+    background-color: var(--cor-hover);
+    border: .5px solid var(--cor-primaria);
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.rodape label{
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.rodape input{
+    outline: none;
+    height: 25px;
+    border: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    font-size: 1.1em;
+}
+
+.botao_venda{
+  margin-left: 20px;
+  width: 100px;
+  font-weight: bold;
+  background-color: var(--cor-secundaria);
+  
+}
+.botao_venda:hover{
+   background-color: var(--cor-hover);
+}
+
+/*----- Corpo historico Venda ----*/
+
+.titulo_topo_h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: var(--cor-primaria);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.tabela_hist{
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;    
+}
+
+
+.tabela_hist td{
+    padding: 8px;
+    text-align: left;
+    border: 1px solid var(--cor-primaria);
+    font-size: 1.2em;
+   
+
+}
+.top_tr td{
+    color: var(--cor-primaria);
+    font-weight: bold;
+    background-color: var(--cor-destaque);
+    border: 1px solid var(--cor-primaria);
+    
+}
+.info_cliente_tabela td{
+   color: var(--cor-primaria);
+   font-size: 1em;
+   font-weight: bold;
+}
+
+.qt_total{
+    color: var(--cor-primaria);
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.qt_total input{
+    outline: none;
+    height: 25px;
+    border: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    font-size: 1.1em;
+}
+.botao_edite{
+    width: 60px;
+    height: 25px;
+    border: 2px solid var(--cor-primaria);
+    
+}
+
+.botao_edite a{
+   text-decoration: none;
+   color: var(--cor-primaria);
+   font-size: 1.1em;
+   font-weight: bold;
+}
+.botao_edite:hover{
+    background-color:  var(--cor-hover);
+    
+}
