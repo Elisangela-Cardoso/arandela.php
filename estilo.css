@@ -479,6 +479,7 @@ header{
     color: var(--cor-primaria);
     padding-top: 40px;
     padding-bottom: 40px;
+   
 }
 
 
@@ -494,7 +495,7 @@ header{
     text-align: left;
     border: 1px solid var(--cor-primaria);
     font-size: 1.2em;
-   
+    width: 195px;
 
 }
 .top_tr td{
