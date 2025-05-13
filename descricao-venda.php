@@ -9,11 +9,9 @@
       $quantidade = $_POST['quantidade'];
       $valor = $_POST['valor'];
       $data = $_POST['data'];
-      $quantidade_total = $_POST['quantidade_total'];
-      $valor_total = $_POST['valor_total'];
+     
       
-      
-      $resultado = mysqli_query($conexao, "INSERT INTO historico_vendas(nome,codigo ,desc_produto,quantidade , valor, data, quantidade_total, valor_total) VALUES ('$nome','$codigo','$desc_produto,'$quantidade', '$valor','$data','$quantidade_total','$valor_total')");
+      $resultado = mysqli_query($conexao, "INSERT INTO historico_vendas(nome,codigo,desc_produto,quantidade , valor, data) VALUES ('$nome','$codigo','$desc_produto','$quantidade', '$valor','$data')");
  
     }
     
@@ -40,12 +38,13 @@
       </svg></a>
       </div>
     </header>
-     <div class="nome">
+     
+      <form action="descricao-venda.php" method="POST">
+      <div class="nome">
      <label for="nome">Nome:</label>
      <input type="text" name="nome">
      </div>
-    
-        <form action="descricao-venda.php" method="POST">
+     
          <div class="box_tabela">
          <table class="tabela_venda" id="minhaTabela">
          <thead>

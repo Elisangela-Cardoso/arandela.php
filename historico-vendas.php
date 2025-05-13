@@ -43,13 +43,14 @@
       <input type="text" name="filtro" id="filtrar_cliente" placeholder="Buscar por cliente"></label>
 
     <table class="tabela_hist" id="tabela_venda">
-        <tr class="top_tr"> 
+        <tr class="titulos_vendas"> 
             <td class="top_td">Nome</td>
             <td class="top_td">Código</td>
             <td class="top_td">Descrição do Produto</td>
             <td class="top_td">Quantidade</td>
             <td class="top_td">Valor</td>
             <td class="top_td">Data</td>
+            <td></td>
           
            
            
@@ -68,26 +69,24 @@
             <td>2<?php echo $user['quantidade']?></td> 
             <td class="info_desconto">300.90<?php echo $user['valor']?></td>
             <td class="info_total"><?php echo $user['data']?></td>
+            <td class="edita_venda">
+            <a href="edite-venda.php?id=<?php echo $user['id'];?>">
+
+            <svg xmlns='http://www.w3.org/2000/svg' width='20' height='15' fill='rgb(115, 107, 65)' class='bi bi-pencil-square' viewBox='0 0 16 16'>
+            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+            </svg>
+            </a>
+            </td>
             
-            
-        </tr>
+            </tr>
       
            
         <?php
             }
           ?>
     </table>
-        <section class="qt_total">
         
-           <label for="">Quantidade Total</label>
-           <input type="text" value="<?php echo $user['quantidade_total']?>" size="10">
-           <label for="">Total da Venda</label>
-           <input type="text" value="<?php echo $user['valor_total']?>" size="15">
-         
-           <button type="button" class="botao_edite"><a href="edite-venda.php?id=<?php echo $user['id'];?>">Editar</a></button>
-          
-        </section>
-      
     <script src="js/buscar_vendas.js"></script>
 </body>
 </html>

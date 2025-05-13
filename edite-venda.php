@@ -14,12 +14,11 @@
         {
         $id = $user['id'];
         $nome = $user['nome'];
+        $codigo = $user['codigo'];
+        $desc_produto = $user['desc_produto'];
         $quantidade = $user['quantidade'];
-        $preco = $user['preco'];
-        $descricao = $user['descricao'];
-        $desconto = $user['desconto'];
-        $total = $user['total'];
-        $data_da_venda = $user['data_da_venda'];
+        $valor = $user['valor'];
+        $data = $user['data'];
         
         }
       }
@@ -88,10 +87,10 @@
 
      <section class="rodape">
         <label for="Quantidade_total">Quantidade de itens:</label>
-        <input type="text" size="8" value="<?php echo $quantidade_total?>" >
+        <input type="text" size="8" value="" >
         <label for="valor_total">Total da venda:</label>
-        <input type="text" size="10" value="<?php echo $valor_total?>">
-        <input type="hidden" name="id" value="<?php echo $id?>">
+        <input type="text" size="10" value="">
+        <input type="hidden" name="id" value="">
         <input class="botao_venda" type="submit" name="update" value="Atualizar">
      </section>
 
