@@ -19,7 +19,6 @@
         $quantidade = $user['quantidade'];
         $valor = $user['valor'];
         $data = $user['data'];
-        
         }
       }
       else
@@ -54,12 +53,13 @@
       </svg></a>
       </div>
     </header>
+     <form action="salva-edite-venda.php" method="POST">
      <div class="nome">
      <label for="nome">Nome:</label>
      <input type="text" name="nome" value="<?php echo $nome ?>" >
      </div>
     
-        <form action="salva-edite-venda.php" method="POST">
+        
          <div class="box_tabela">
          <table class="tabela_venda" id="minhaTabela">
          <thead>
@@ -72,11 +72,12 @@
           </tr>
           </thead>
           <tbody id="tabela_corpo">
+        
            <tr>
-           <td><input type="text" name="codigo" value="<?php echo $codigo ?>" ></td> 
-           <td><input type="text" name="desc_produto" value="<?php echo $desc_produto ?>" ></td>
-           <td class="quantidade"><input type="text" name="quantidade" value="<?php echo $quantidade ?>" ></td>
-           <td><input type="text" name="valor" value="<?php echo $valor?>" ></td>
+           <td><input type="text" name="codigo" value="<?php echo $codigo ?>"></td> 
+           <td><input type="text" name="desc_produto" value="<?php echo $desc_produto?>"></td>
+           <td class="quantidade"><input type="text" name="quantidade" value="<?php echo $quantidade?>"></td>
+           <td><input type="text" name="valor" value="<?php echo $valor?>"></td>
            <td><input type="date" name="data" value="<?php echo $data?>"></td>
            </tr>
 
@@ -90,7 +91,7 @@
         <input type="text" size="8" value="" >
         <label for="valor_total">Total da venda:</label>
         <input type="text" size="10" value="">
-        <input type="hidden" name="id" value="">
+        <input type="hidden" name="id" value="<?php echo $id?>">
         <input class="botao_venda" type="submit" name="update" value="Atualizar">
      </section>
 

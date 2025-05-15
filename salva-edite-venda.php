@@ -6,15 +6,14 @@
     {    
       $id = $_POST['id'];
       $nome = $_POST['nome'];
+      $codigo = $_POST['codigo'];
+      $desc_produto = $_POST['desc_produto'];
       $quantidade = $_POST['quantidade'];
-      $preco = $_POST['preco'];
-      $descricao = $_POST['descricao'];
-      $desconto = $_POST['desconto'];
-      $total = $_POST['total'];
-      $data_da_venda = $_POST['data_da_venda'];
+      $valor = $_POST['valor'];
+      $data = $_POST['data'];
       
 
-      $sqlUpdate = "UPDATE historico_vendas SET nome = '$nome', quantidade ='$quantidade', preco ='$preco', descricao ='$descricao', desconto ='$desconto', total ='$total', data_da_venda = '$data_da_venda' WHERE id ='$id' ";
+      $sqlUpdate = "UPDATE historico_vendas SET nome = '$nome',codigo ='$codigo', desc_produto ='$desc_produto',  quantidade ='$quantidade',valor ='$valor', data = '$data' WHERE id ='$id' ";
 
       $resultado = $conexao->query($sqlUpdate);
       

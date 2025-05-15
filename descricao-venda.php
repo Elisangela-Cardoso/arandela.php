@@ -40,11 +40,11 @@
     </header>
      
       <form action="descricao-venda.php" method="POST">
+       
       <div class="nome">
      <label for="nome">Nome:</label>
      <input type="text" name="nome">
      </div>
-     
          <div class="box_tabela">
          <table class="tabela_venda" id="minhaTabela">
          <thead>
@@ -56,7 +56,7 @@
             <th>Data da venda</th>
           </tr>
           </thead>
-
+          
           <tbody id="tabela_corpo">
            <tr>
            <td><input type="text" name="codigo"></td> 
@@ -76,13 +76,16 @@
         </div>
 
      <div class="rodape">
+       
         <label for="quantidade_total">Quantidade de itens:</label>
-        <input type="text" size="8" name="quantidade_total">
+        <input type="text" size="8" name="quantidade_total" value="">
         <label for="valor_total">Total da venda:</label>
         <input type="text" size="10" name="valor_total">
         <input class="botao_venda" type="submit" name="submit" value="Concluir">
    </div>
+     
      </form>
     <script src="js/adiciona_linha.js"></script> 
+  
 </body>
 </html>

@@ -64,10 +64,10 @@
         
         <tr class="info_cliente_tabela">
             <td class="info_nome"><?php echo $user['nome']?></td>
-            <td>12123233<?php echo $user['codigo']?></td>
+            <td><?php echo $user['codigo']?></td>
             <td><?php echo $user['desc_produto']?></td>
-            <td>2<?php echo $user['quantidade']?></td> 
-            <td class="info_desconto">300.90<?php echo $user['valor']?></td>
+            <td><?php echo $user['quantidade']?></td> 
+            <td class="info_desconto"><?php echo $user['valor']?></td>
             <td class="info_total"><?php echo $user['data']?></td>
             <td class="edita_venda">
             <a href="edite-venda.php?id=<?php echo $user['id'];?>">
